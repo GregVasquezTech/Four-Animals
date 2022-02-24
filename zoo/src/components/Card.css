@@ -1,0 +1,93 @@
+/*
+    Sizing and positioning all the Pokemon cards.
+*/
+.card-container {
+    width: 300px; 
+    overflow: hidden;
+    margin-top: 50px;
+    margin-bottom: 25px;
+    box-shadow: 0px 0px 15px -5px;
+    transition: 0.5s;
+    animation: ease-in;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,
+    minmax(192px, 256px));
+    gap: 32px;
+    justify-content: center;
+}
+
+/*
+    Giving an animation when user hovers any 
+    Pokemon card.
+*/
+.card-container:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 15px 0px;
+}
+/*
+    Sizing all the images 
+*/
+.image-container img{
+    overflow: hidden;
+    height: 200px;
+    width: auto;
+}
+
+/*
+    Positioning the card info (paragraph)
+*/
+.card-content{
+    margin: 16px;
+    margin-top: 8px;
+
+}
+
+h2,p{
+    margin: 0;
+    padding: 0;
+}
+
+/*
+    Positing the name of the Pokemon
+*/
+.card-name{
+    margin-bottom: 8px;
+}
+
+/*
+    Sizing and positioning the button.
+*/
+.btn{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 8px;
+}
+
+/*
+    Styling the button
+*/
+.btn button{
+    padding: 8px;
+    background-color: #FFF;
+    border: none;
+    transition: 0.2s;
+    margin-bottom: 0.5rem;
+    border-radius: 3px;
+}
+
+/*
+    Adding an animation when hovering the button.
+*/
+.btn:hover{
+    transform: scale(1.1);
+}
+
+/*
+    Customizing the button text 
+*/
+a{
+    text-transform: uppercase;
+    color: steelblue;
+    text-decoration: none;
+    font-weight: bold;
+}
